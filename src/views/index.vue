@@ -1,35 +1,6 @@
 <template>
   <div class="home-wrapper">
-    <el-row class="pl20 pr20 pb20 pt20" :gutter="10">
-      <el-col :span="12">
-        <el-card shadow="always" style="padding-bottom: 20px;font-size: 14px" >
-          <div slot="header">
-            <span style="font-size: large;font-weight: bold">SaaS版已上线，如需体验，请在公众号内回复：saas</span>
-          </div>
-          <div style="display: flex;align-items: center">
-            <div class="first" style="font-size:20px;line-height: 50px;background: linear-gradient(to right, red, blue);-webkit-background-clip: text;color: transparent;">
-              轻量级库存管理工具，不用安装，自动升级，让仓库效率提高5倍，让出错概率降低5倍。 集中入库、出库、扫描、一物一码、商品、库存、供应商、结算等优质功能于一体，为商家提供更全面库存处理解决方案。
-            </div>
-          </div>
-        </el-card>
-      </el-col>
-      <el-col :span="12">
-        <el-card style="font-size: 14px">
-          <div slot="header">
-            <span style="font-size: large;font-weight: bold">讲解视频：</span><a href="https://www.bilibili.com/video/BV1ys4y1q7uG/" target="_blank">https://www.bilibili.com/video/BV1ys4y1q7uG/</a>
-          </div>
-          <div style="display: flex;align-items: center">
-            <div class="first">
-              <img alt="" :src="require('@/assets/QRCode/express.jpg')" style="height: 100px; margin-right:10px;" />
-            </div>
-            <div class="first" style="font-size:20px;line-height: 50px;background: linear-gradient(to right, red, blue);-webkit-background-clip: text;color: transparent;">
-              仓库发货便宜寄快递，大件5折，小件6折。扫描左侧二维码。
-            </div>
-          </div>
 
-        </el-card>
-      </el-col>
-    </el-row>
 
     <el-row class="pl20 pr20" :gutter="10">
       <el-col :span="12">
@@ -140,7 +111,7 @@
         </el-card>
       </el-col>
       <el-col :span="12">
-        <el-card style="padding-bottom: 20px; font-size: 14px">
+<!--        <el-card style="padding-bottom: 20px; font-size: 14px">
           <div slot="header"><span>发展历程</span></div>
           <el-timeline>
             <el-timeline-item placement="top" timestamp="2018年">
@@ -174,7 +145,7 @@
               </el-card>
             </el-timeline-item>
           </el-timeline>
-        </el-card>
+        </el-card>-->
         <el-card style="padding-bottom: 20px; font-size: 14px;margin-top: 20px;">
           <div slot="header" ref="expiry"><span>过期物料</span></div>
           <WmsTable v-loading="loading" :data="expiryList">
