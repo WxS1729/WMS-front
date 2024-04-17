@@ -20,35 +20,18 @@ npm run build:stage
 # 构建生产环境
 npm run build:prod
 ```
-## 后端开源项目地址
-### gitee
-https://gitee.com/zccbbg/wms-ruoyi
-### github
-https://github.com/zccbbg/wms-ruoyi
 
-## 在线体验
-- 演示地址：http://wms.ichengle.top
-- 给大家一个便宜寄快递的福利，大件5折，小件6折：
-- <img src="doc/express.jpg" width="200px">
 
-## CSDN若依技术专栏
-- 常见问题：https://blog.csdn.net/qq_27575627/category_12336113.html
-- 后端技术：https://blog.csdn.net/qq_27575627/category_12331868.html
-- 前端技术：https://blog.csdn.net/qq_27575627/category_12331867.html
-- 运维：https://blog.csdn.net/qq_27575627/category_12332546.html
 
-## B站视频介绍
-https://www.bilibili.com/video/BV1ys4y1q7uG
-
-## 若依wms简介
-若依wms是一套基于若依的wms仓库管理系统，支持lodop和网页打印入库单、出库单。毫无保留给个人及企业免费使用。
+## wms简介
+支持lodop和网页打印入库单、出库单。
 * 前端采用Vue、Element UI（ant design 正在开发中）。
 * 后端采用Spring Boot、Spring Security、Redis & Jwt。
 * 权限认证使用Jwt，支持多终端认证系统。
 * 支持加载动态权限菜单，多方式轻松权限控制。
 * 高效率开发，使用代码生成器可以一键生成前后端代码。
 
-## 若依wms功能
+## wms功能
 1. 首页：库存预警与到期提醒、基础数据报表展示
 2. 仓库/库区/货架：管理维护仓库基础数据
 3. 物料：管理维护物料基础数据
@@ -64,8 +47,6 @@ https://www.bilibili.com/video/BV1ys4y1q7uG
 #### 出库状态流转
 ![出库状态流转](https://oscimg.oschina.net/oscnet/up-55cad3f077f914e357efeaae0b3feecf942.jpg)
 
-## 关于我们
-开发团队成立于2017年，我们前端开发、后端架构，有一颗热爱开源的心，致力于打造企业级的通用产品设计UI体系让项目 或者更直观，更高效、更简单，未来将持续关注UI交互，持续推出高质量的交互产品。
 
 ## 演示图
 ![首页](https://oscimg.oschina.net/oscnet/up-89f751967b4145f7da92e23536bf231fbe8.jpg)
@@ -75,7 +56,7 @@ https://www.bilibili.com/video/BV1ys4y1q7uG
 ![仓库列表](https://oscimg.oschina.net/oscnet/up-a00eb79bee48e481249a12cb5e6c476aaa3.jpg)
 ![库存看板](https://oscimg.oschina.net/oscnet/up-78990915dfba902384ed4b09e3dc0f0fe05.jpg)
 
-## 若依内置功能
+## 内置功能
 
 1.  用户管理：用户是系统操作者，该功能主要完成系统用户配置。
 2.  部门管理：配置系统组织机构（公司、部门、小组），树结构展现支持数据权限。
@@ -130,17 +111,3 @@ https://www.bilibili.com/video/BV1ys4y1q7uG
     </tr>
 </table>
 
-
-## 关于我们
-* 开发团队成立5年，我们前端开发、后端架构，有一颗热爱开源的心，致力于打造企业级的通用产品设计UI体系让项目 或者更直观，更高效、更简单，未来将持续关注UI交互，持续推出高质量的交互产品。
-* 这五年我主要做isv对接淘宝、拼多多、抖音、美团等平台的订单处理应用，日处理订单300w条，因为要熟悉业务也开过淘宝和拼多多店铺运营了一个网易严选的品牌。我们的公众号会陆续更新一些我一边撸代码一边做客服的经历。也会更新一些我的读书笔记以及编程、创业、生活中踩坑的文章。另外还会开放一些米哈游、博世、企查查、同程、阿里、京东、拼多多等大厂、中厂或外企的内推岗位！
-
-## 大厂、外企内推
-关注“编写美好前程”公众号：记录编程、创业、生活中踩坑的文章，陆续会开放一些微软、阿里、京东、拼多多等大厂或外企的内推岗位！
-
-## 加群/技术支持
-
-|                    公众号                     |
-|:------------------------------------------:|
-| <img src="doc/datacall.jpg" width="200px"> |
-扫公众号二维码，关注后回复：“加群”或“支持”
