@@ -1,14 +1,15 @@
 <template>
   <div :class="classObj" class="app-wrapper" :style="{'--current-color': theme}">
     <div v-if="device==='mobile'&&sidebar.opened" class="drawer-bg" @click="handleClickOutside"/>
-    <sidebar v-if="!sidebar.hide" class="sidebar-container" />
-    <div :class="{hasTagsView:needTagsView,sidebarHide:sidebar.hide}" class="main-container">
+    <top-title></top-title>
+    <sidebar class="sidebar-container"/>
+    <div :class="{hasTagsView: needTagsView, hasNoTagsView: !needTagsView}" class="main-container">
       <div :class="{'fixed-header':fixedHeader}">
-        <navbar />
+        <!--        <navbar />-->
         <tags-view v-if="needTagsView" />
       </div>
       <app-main />
-      <right-panel>
+      <right-panel v-if="showSettings">
         <settings />
       </right-panel>
     </div>
@@ -16,53 +17,59 @@
 </template>
 
 <script>
-import RightPanel from '@/components/RightPanel'
-import { AppMain, Navbar, Settings, Sidebar, TagsView } from './components'
-import ResizeMixin from './mixin/ResizeHandler'
-import { mapState } from 'vuex'
-import variables from '@/assets/styles/variables.scss'
+  import RightPanel from '@/components/RightPanel'
+  import { AppMain, Navbar, Settings, Sidebar, TagsView, TopTitle } from './components'
+  import ResizeMixin from './mixin/ResizeHandler'
+  import { mapState } from 'vuex'
+  import variables from '@/assets/styles/variables.scss'
 
-export default {
-  name: 'Layout',
-  components: {
-    AppMain,
-    Navbar,
-    RightPanel,
-    Settings,
-    Sidebar,
-    TagsView
-  },
-  mixins: [ResizeMixin],
-  computed: {
-    ...mapState({
-      theme: state => state.settings.theme,
-      sideTheme: state => state.settings.sideTheme,
-      sidebar: state => state.app.sidebar,
-      device: state => state.app.device,
-      needTagsView: state => state.settings.tagsView,
-      fixedHeader: state => state.settings.fixedHeader
-    }),
-    classObj() {
-      return {
-        hideSidebar: !this.sidebar.opened,
-        openSidebar: this.sidebar.opened,
-        withoutAnimation: this.sidebar.withoutAnimation,
-        mobile: this.device === 'mobile'
-      }
+  export default {
+    name: 'Layout',
+    components: {
+      AppMain,
+      Navbar,
+      RightPanel,
+      Settings,
+      Sidebar,
+      TagsView,
+      TopTitle
     },
-    variables() {
-      return variables;
-    }
-  },
-  created() {
-    this.$store.dispatch('loadAllDict')
-  },
-  methods: {
-    handleClickOutside() {
-      this.$store.dispatch('app/closeSideBar', { withoutAnimation: false })
+    mixins: [ResizeMixin],
+    computed: {
+      ...mapState({
+        theme: state => state.settings.theme,
+        sideTheme: state => state.settings.sideTheme,
+        sidebar: state => state.app.sidebar,
+        device: state => state.app.device,
+        showSettings: state => state.settings.showSettings,
+        needTagsView: state => state.settings.tagsView,
+        fixedHeader: state => state.settings.fixedHeader,
+        stationShow: state => state.app.stationShow
+      }),
+      classObj() {
+        return {
+          hideSidebar: !this.sidebar.opened,
+          openSidebar: this.sidebar.opened,
+          withoutAnimation: this.sidebar.withoutAnimation,
+          mobile: this.device === 'mobile'
+        }
+      },
+      variables() {
+        return variables;
+      },
+      currentStation(){
+        return this.$store.state.user.currentStation;
+      },
+    },
+    methods: {
+      handleClickOutside() {
+        this.$store.dispatch('app/closeSideBar', { withoutAnimation: false })
+      },
+      toggleStationShow() {
+        this.$store.dispatch('app/toggleStationShow');
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
@@ -104,21 +111,7 @@ export default {
     width: calc(100% - 54px);
   }
 
-  .sidebarHide .fixed-header {
-    width: 100%;
-  }
-
   .mobile .fixed-header {
     width: 100%;
-  }
-  #footer-global {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    padding: 12px;
-    box-shadow: -1px 0 12px 0 var(--gray-5);
-    transition: all .28s;
-    background-color: white;
-    z-index: 1;
   }
 </style>

@@ -19,7 +19,7 @@
         </el-col>
         <el-col :span="1.5">
           <el-button v-if="mergeDetailStatusArray.length === 1" type="primary" plain="plain" size="small"
-                     @click="batch">批量设置出库状态
+                     @click="batch">批量设置移库状态
           </el-button>
         </el-col>
 

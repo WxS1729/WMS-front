@@ -111,41 +111,7 @@
         </el-card>
       </el-col>
       <el-col :span="12">
-<!--        <el-card style="padding-bottom: 20px; font-size: 14px">
-          <div slot="header"><span>发展历程</span></div>
-          <el-timeline>
-            <el-timeline-item placement="top" timestamp="2018年">
-              <el-card>
-                <h4>参与京东服务市场商品分析应用开发，参与京东服务市场会员积分应用开发</h4>
-              </el-card>
-            </el-timeline-item>
-            <el-timeline-item placement="top" timestamp="2019年">
-              <el-card>
-                <h4>参与京东服务市场商品搬家应用开发，参与京东服务市场商品搬家应用开发，参与拼多多服务市场订单应用开发</h4>
-              </el-card>
-            </el-timeline-item>
-            <el-timeline-item placement="top" timestamp="2020年">
-              <el-card>
-                <h4>所参与开发的拼多多订单应用排名服务市场类目第一，开始快手服务市场订单应用开发</h4>
-              </el-card>
-            </el-timeline-item>
-            <el-timeline-item placement="top" timestamp="2021年">
-              <el-card>
-                <h4>日处理拼多多订单200万条，开始美团、饿了么应用市场应用开发</h4>
-              </el-card>
-            </el-timeline-item>
-            <el-timeline-item placement="top" timestamp="2022年">
-              <el-card>
-                <h4>累计服务10万+电商平台店铺、5万+外卖店铺。开始抖音、淘宝服务市场订单应用开发，开源ruoyi-wms</h4>
-              </el-card>
-            </el-timeline-item>
-            <el-timeline-item placement="top" timestamp="2023年">
-              <el-card>
-                <h4>B站播放量破万，开源ruoyi-mall，公众号粉丝破万，wms-saas火热研发中</h4>
-              </el-card>
-            </el-timeline-item>
-          </el-timeline>
-        </el-card>-->
+
         <el-card style="padding-bottom: 20px; font-size: 14px;margin-top: 20px;">
           <div slot="header" ref="expiry"><span>过期物料</span></div>
           <WmsTable v-loading="loading" :data="expiryList">

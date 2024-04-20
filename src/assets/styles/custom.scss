@@ -1,0 +1,407 @@
+.query-param {
+  width: 240px;
+}
+
+.con-container {
+  padding: 5px 1px 5px 0px;
+  background-color: #F8F8F9;
+  border: 1px solid #ecedf0;
+}
+
+.btn-container {
+  display: inline-block;
+  position: absolute;
+  right: 45px;
+  height: 30px;
+  line-height: 30px;
+  float: right;
+}
+
+.btn-container{
+  .el-button--primary{
+    color: black;
+    background-color: #d6d9df00;
+    border-color: #d6d9df00;
+  }
+
+  .el-button--primary, .el-button--primary:hover, .el-button--primary:focus, .el-button--primary:active{
+    color: #FFF;
+    background-color: #409EFF;
+    border-color: #409EFF;
+    //background-color: #d6d9df00;
+    //border-color: #d6d9df00;
+
+  }
+
+  .el-button--mini {
+    padding: 7px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+}
+
+.el-button--primary:hover, .el-button--primary:focus {
+  background: #f70000;
+}
+
+.lab-container {
+  display: inline-block;
+  z-index: 2;
+}
+
+.more-lab-container{
+  background-color: #f9f9f9;
+}
+
+.toggle-container {
+  background-color: #F8F8F9;
+  border: 1px solid #ecedf0;
+  border-top: none;
+  min-height: 40px;
+  padding: 10px 0 0 0;
+  display: none;
+  clear: both;
+  width: 100%;
+}
+
+.condition-item {
+  height: 40px;
+  line-height: 35px;
+  float: left;
+}
+
+.condition-item-title {
+  color: #606266;
+  display: inline-block;
+  text-align: left;
+  padding-left: 5px;
+  padding-right: 15px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.custom-el-form-item {
+  margin-bottom: 0 !important;
+}
+
+.custom-form{
+  margin-bottom: 5px;
+}
+
+.dialog-header-slot {
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.custom-textarea .el-textarea__inner {
+  display: block;
+  resize: vertical;
+  padding: 5px 0px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: inherit;
+  color: #606266;
+  background-color: #fff;
+  background-image: none;
+  border: 0px solid #DCDFE6;
+  border-radius: 4px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+  width: 9px;  /*滚动条宽度*/
+  height: 9px;  /*滚动条高度*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  border-radius: 5px;  /*滚动条的背景区域的圆角*/
+  background-color: white;/*滚动条的背景颜色*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;  /*滚动条的圆角*/
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #eae7e7;  /*滚动条的背景颜色*/
+}
+  body .el-table th.gutter {
+    display: table-cell !important;
+    border-bottom: 1px solid #dfe6ec;
+    width: 7px !important;
+  }
+
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:hover, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:active {
+  color: #9ea0a4;
+  background-color: #d6d9df00;
+  border-color: #d6d9df00;
+}
+
+.custom-primary{
+  color: black;
+  background-color: #d6d9df00;
+  border-color: #d6d9df00;
+}
+
+.custom-primary, .custom-primary:hover, .custom-primary:focus{
+  color: black;
+  background-color: #d6d9df00;
+  border-color: #d6d9df;
+}
+
+.custom-primary, .custom-primary:active{
+  color: black;
+  background-color: #d6d9df00;
+  border-color: #d6d9df00;
+}
+
+// 解决排序组件样式导致表头高度过长的问题
+.el-table .caret-wrapper{
+  height: 20px !important;
+  display: inline !important;
+  .sort-caret.ascending{
+    top: -6px;
+    //top: -2px;
+  }
+  .sort-caret.descending{
+    bottom: -3px;
+    //bottom: 0px;
+  }
+}
+
+.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: #ff6600;
+}
+.el-table .descending .sort-caret.descending {
+  border-top-color: #ff6600;
+}
+
+.el-table .noCheck{
+  background: oldlace;
+}
+
+.el-form-item__label {
+  text-align: right;
+  vertical-align: middle;
+  float: left;
+  font-size: 14px;
+  //color: #999;
+  color: #606266;
+  line-height: 40px;
+  padding: 0 12px 0 0;
+  box-sizing: border-box;
+}
+.el-input__inner {
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #DCDFE6;
+  box-sizing: border-box;
+  color: #444;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+.el-form-item--small .el-form-item__label {
+  line-height: 33px;
+}
+.el-cascader__tags {
+  position: absolute;
+  left: 0;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+   flex-wrap: nowrap;
+  line-height: normal;
+  text-align: left;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.neditor-image{
+  max-width: 100%;
+}
+
+.search-form {
+  background-color: white;
+  padding: 0 10px;
+}
+.search-form .el-form-item {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.table-button-container {
+  margin: 0 0 5px 0 !important;
+  background-color: white;
+  padding: 5px;
+}
+.el-button--primary:hover, .el-button--primary:focus, .el-button--primary:active{
+  color: #FFF;
+  background-color: #38B3FF;
+  border-color: #38B3FF;
+}
+
+
+.el-table .warning-row {
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: darkgoldenrod;
+  display: inline-block;
+}
+
+.el-table .wait-row {
+  position: relative;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #FFC20E;
+  display: inline-block;
+}
+.el-table .running-row {
+  position: relative;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #67C23A;
+  display: inline-block;
+}
+
+.el-table .finish-row {
+  position: relative;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #67C23A;
+  display: inline-block;
+}
+
+
+.el-table .success-row {
+  position: relative;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #{'var(--current-color)'};
+  display: inline-block;
+}
+
+.el-table .red-row {
+  background-color: #F5222D;
+}
+
+.el-table .yellow-row {
+  background-color: #F4A616;
+}
+
+.el-table {
+  .success-row:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #{'var(--current-color)'};
+    border-radius: 50%;
+    -webkit-animation: text-round 1.2s infinite ease-in-out;
+    animation: text-round 1.2s infinite ease-in-out;
+    content: '';
+  }
+  .running-row:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #67C23A;
+    border-radius: 50%;
+    -webkit-animation: text-round 1.2s infinite ease-in-out;
+    animation: text-round 1.2s infinite ease-in-out;
+    content: '';
+  }
+}
+
+.el-table .error-row {
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  display: inline-block;
+}
+
+.el-table .offline-row {
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: darkgray;
+  display: inline-block;
+}
+
+.active-row{
+  position: relative;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #{'var(--current-color)'};
+  display: inline-block;
+}
+
+.active-row:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #{'var(--current-color)'};
+  border-radius: 50%;
+  -webkit-animation: text-round 1.2s infinite ease-in-out;
+  animation: text-round 1.2s infinite ease-in-out;
+  content: '';
+}
+
+@keyframes text-round {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes text-round {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+

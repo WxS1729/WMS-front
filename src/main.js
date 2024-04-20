@@ -6,7 +6,10 @@ import Element from 'element-ui'
 import './assets/styles/element-variables.scss'
 
 import '@/assets/styles/index.scss' // global css
-import '@/assets/styles/ruoyi.scss' // ruoyi css
+import '@/assets/styles/bluesword.scss' // ruoyi css
+import '@/assets/styles/custom.scss'
+import '@/assets/styles/customForm.scss'
+
 import App from './App'
 import store from './store'
 import router from './router'

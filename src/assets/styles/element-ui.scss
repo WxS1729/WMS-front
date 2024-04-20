@@ -84,9 +84,25 @@
 }
 
 .el-menu--collapse
-  > div
-  > .el-submenu
-  > .el-submenu__title
-  .el-submenu__icon-arrow {
+> div
+> .el-submenu
+> .el-submenu__title
+.el-submenu__icon-arrow {
   display: none;
+}
+
+.el-button{
+  font-family: SimHei, Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+.el-input__inner{
+  font-family: SimHei, Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+.el-textarea__inner{
+  font-family: SimHei, Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
+}
+
+.el-select{
+  font-family: SimHei, Avenir, Helvetica Neue, Arial, Helvetica, sans-serif;
 }

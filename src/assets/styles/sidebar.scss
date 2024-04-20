@@ -1,14 +1,11 @@
 #app {
 
   .main-container {
-    min-height: 100%;
+    //min-height: 100%;
+    min-height: calc(100vh - 55px);
     transition: margin-left .28s;
     margin-left: $base-sidebar-width;
     position: relative;
-  }
-
-  .sidebarHide {
-    margin-left: 0!important;
   }
 
   .sidebar-container {
@@ -16,16 +13,38 @@
     transition: width 0.28s;
     width: $base-sidebar-width !important;
     background-color: $base-menu-background;
-    height: 100%;
+    height: calc(100% - 55px);
     position: fixed;
     font-size: 0px;
-    top: 0;
+    top: 50px;
     bottom: 0;
     left: 0;
     z-index: 1001;
     overflow: hidden;
-    -webkit-box-shadow: 2px 0 6px rgba(0,21,41,.35);
-    box-shadow: 2px 0 6px rgba(0,21,41,.35);
+    -webkit-box-shadow: 2px 0 6px rgba(240,240,240,.5);
+    box-shadow: 2px 0 6px rgba(240,240,240,.5);
+
+    .humburgerTransfer{
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: $base-sidebar-width !important;
+      height: 50px;
+      overflow: hidden;
+
+      .toggleBar-container {
+        line-height: 50px;
+        height: 100%;
+        cursor: pointer;
+        transition: background .3s;
+        -webkit-tap-highlight-color:transparent;
+
+        &:hover {
+          background: rgba(24,144,255,0.2)
+        }
+      }
+    }
+
 
     // reset element-ui css
     .horizontal-collapse-transition {
@@ -74,18 +93,22 @@
       overflow: hidden !important;
       text-overflow: ellipsis !important;
       white-space: nowrap !important;
+      /*新增部分，降低菜单的高度*/
+      height: 45px;
+      line-height: 45px;
     }
 
     // menu hover
     .submenu-title-noDropdown,
     .el-submenu__title {
       &:hover {
-        background-color: rgba(0, 0, 0, 0.06) !important;
+        background-color: rgba(24,144,255, 0.1) !important;
       }
     }
 
     & .theme-dark .is-active > .el-submenu__title {
-      color: $base-menu-color-active !important;
+      //color: $base-menu-color-active !important;
+      color: #{'var(--current-color)'} !important;
     }
 
     & .nest-menu .el-submenu>.el-submenu__title,
@@ -110,7 +133,12 @@
   .hideSidebar {
     .sidebar-container {
       width: 54px !important;
+
+      .humburgerTransfer{
+        width: 54px !important;
+      }
     }
+
 
     .main-container {
       margin-left: 54px;
