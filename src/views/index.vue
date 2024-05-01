@@ -168,11 +168,11 @@ export default {
       expiryList: [],
       queryWarnParams: {
         pageNum: 1,
-        pageSize: 10
+        pageSize: 15
       },
       queryExpiryParams: {
         pageNum: 1,
-        pageSize: 10
+        pageSize: 15
       },
       //预警条数
       totalWarn: 0,

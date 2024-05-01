@@ -259,7 +259,7 @@ export default {
       // 查询参数
       queryParams: {
         pageNum: 1,
-        pageSize: 10,
+        pageSize: 15,
         rackNo: null,
         rackName: null,
         areaId: null,

@@ -76,7 +76,7 @@ export default {
       // 表格数据
       list: [],
       pageNum: 1,
-      pageSize: 10,
+      pageSize: 15,
       // 查询参数
       queryParams: {
         ipaddr: undefined,

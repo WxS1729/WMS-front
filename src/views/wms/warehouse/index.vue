@@ -111,10 +111,6 @@
           <el-input v-model="areaForm.areaName" placeholder="请输入名称" />
         </el-form-item>
         <el-form-item label="所属仓库" prop="warehouseId">
-          <!-- <el-select v-model="form.warehouseId" placeholder="请输入货仓名称" clearable size="small">
-            <el-option v-for="item in warehouseList" :key="item.id" :label="item.warehouseName" :value="item.id">
-            </el-option>
-          </el-select> -->
           <el-input v-model="areaForm.warehouseId" :disabled="true" />
         </el-form-item>
         <el-form-item label="备注" prop="remark">
@@ -185,7 +181,7 @@ export default {
         areaNameLike: null,
         warehouseId: null,
         pageNum: 1,
-        pageSize: 10
+        pageSize: 15
       },
       // 表单参数
       form: {},

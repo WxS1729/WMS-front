@@ -116,7 +116,7 @@
         </template>
       </el-table-column>
     </WmsTable>
-    
+
     <pagination
       v-show="total>0"
       :total="total"
@@ -182,7 +182,7 @@ export default {
       // 查询参数
       queryParams: {
         pageNum: 1,
-        pageSize: 10,
+        pageSize: 15,
         inventoryMovementId: null,
         itemId: null,
         planQuantity: null,

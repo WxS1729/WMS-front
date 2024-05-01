@@ -33,7 +33,7 @@
         </template>
       </el-table-column>
     </el-table>
-    
+
     <pagination v-show="total>0" :total="total" :page.sync="pageNum" :limit.sync="pageSize" />
 
     <el-form label-width="100px">
@@ -57,7 +57,7 @@ export default {
       // 分页信息
       total: 0,
       pageNum: 1,
-      pageSize: 10,
+      pageSize: 15,
       // 选中角色编号
       roleIds:[],
       // 角色信息

@@ -247,7 +247,7 @@ export default {
             // 查询参数
             queryParams: {
                 pageNum: 1,
-                pageSize: 10,
+                pageSize: 15,
                 carrierNo: null,
                 carrierNameLike: null,
                 address: null,

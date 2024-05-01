@@ -22,7 +22,13 @@ const permission = {
       state.defaultRoutes = constantRoutes.concat(routes)
     },
     SET_TOPBAR_ROUTES: (state, routes) => {
-      state.topbarRouters = routes
+      // 顶部导航菜单默认添加统计报表栏指向首页
+      const index = [{
+        path: 'index',
+        meta: { title: '工作台', icon: 'monitor' }
+      }]
+      state.topbarRouters = index.concat(routes);
+      // state.topbarRouters = routes;
     },
     SET_SIDEBAR_ROUTERS: (state, routes) => {
       state.sidebarRouters = routes

@@ -220,7 +220,7 @@ export default {
       // 查询参数
       queryParams: {
         pageNum: 1,
-        pageSize: 10,
+        pageSize: 15,
         title: undefined,
         operName: undefined,
         businessType: undefined,
