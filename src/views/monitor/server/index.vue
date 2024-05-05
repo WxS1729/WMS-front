@@ -198,10 +198,7 @@ export default {
         this.$modal.closeLoading();
       });
     },
-    // 打开加载层
-    openLoading() {
-      this.$modal.loading("正在加载服务监控数据，请稍候！");
-    }
+
   }
 };
 </script>

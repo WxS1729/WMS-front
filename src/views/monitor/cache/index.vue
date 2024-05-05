@@ -138,9 +138,7 @@ export default {
       });
     },
     // 打开加载层
-    openLoading() {
-      this.$modal.loading("正在加载缓存监控数据，请稍候！");
-    }
+
   }
 };
 </script>
